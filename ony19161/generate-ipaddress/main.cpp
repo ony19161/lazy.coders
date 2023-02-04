@@ -5,9 +5,8 @@
 #include <algorithm>
 using namespace std;
 
-
 /*
-	Problem Link: shorturl.at/FHOPZ
+    Problem Link: shorturl.at/FHOPZ
 */
 
 vector<string> genIp(string &s)
@@ -19,13 +18,18 @@ vector<string> genIp(string &s)
 
 int main()
 {
-    // a = 5(00000101), b = 9(00001001)
-    unsigned int a = 6, b = 9;
+    string value[] = {"11121"};
+    string val = value[0];
+    unsigned int index1 = 0;
+    unsigned int index2 = index1 + 1;
+    unsigned int index3 = index2 + 1;
+    unsigned int index4 = index3 + 1;
 
     // The result is 00001010
-    cout << "a<<1 = " << (a >> 1) << endl;
+    char ipAddress = val[index1];
+    strcat(&ipAddress, ".");
+    // ipAddress = ipAddress + value[index2] + "." + value[index3] + "." + value[index4];
+    cout << "IP = " << ipAddress << endl;
 
-    // The result is 00010010
-    cout << "b<<1 = " << (b << 1) << endl;
     return 0;
 }
