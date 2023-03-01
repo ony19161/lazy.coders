@@ -13,23 +13,32 @@ vector<string> genIp(string &s)
 {
     // Your code here
     vector<string> list;
+
+    string res = "";
+    res.append(s, 1, 1);
+
+    std::cout << stoi(res) << endl;
+    res.append(".");
+    res.append(s, 2, 1);
+    std::cout << "Concatenated String:" << endl;
+    std::cout << res << endl;
+
     return list;
 }
 
 int main()
 {
-    string value[] = {"11121"};
-    string val = value[0];
+    string value = "19268";
     unsigned int index1 = 0;
     unsigned int index2 = index1 + 1;
     unsigned int index3 = index2 + 1;
     unsigned int index4 = index3 + 1;
 
     // The result is 00001010
-    char ipAddress = val[index1];
-    strcat(&ipAddress, ".");
-    // ipAddress = ipAddress + value[index2] + "." + value[index3] + "." + value[index4];
-    cout << "IP = " << ipAddress << endl;
+    string str1 = "", str2 = "";
+
+    // cout << res << endl;
+    vector<string> list = genIp(value);
 
     return 0;
 }
