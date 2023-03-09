@@ -96,7 +96,7 @@ int main()
 
  
     string A = "sktofskbwzggugtomgfsisjnexfqsroidroomimoxfneesppmvdfjnuwhwppszididcmazppjujdtd";
-    string B = "mikrfovfoiuyylxrqyeuilbrtsxxny";
+    string B = "mikrfovfoiuyylxrqyeuilbrtsxxnyasdf";
 
     
 
