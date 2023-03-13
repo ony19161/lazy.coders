@@ -68,6 +68,10 @@ int minimumNumber(int n, string password) {
         missingCharCount++;
     }
 
+    if (n + missingCharCount < 6) {
+        missingCharCount = missingCharCount + (6 - (n + missingCharCount));
+    }
+
 
     return missingCharCount;
 
@@ -79,7 +83,8 @@ int main()
 {
 
  
-    string password = "4700";
+    //string password = "4700";
+    string password = "Ab1";
     string B = "mikrfovfoiuyylxrqyeuilbrtsxxny";
 
     
